@@ -160,68 +160,104 @@ footer section {
 
 /* INDEX.HTML */
 
-
-/* MAIN SECTION */
-
-.boxInicio {
-    background-color: rgb(19, 24, 32);
-    margin: 55px 5%;
+.indexBox {
+    display: grid;
+    position: relative;
+    margin: 5% auto;
+    max-width: 1200px;
+    height: 950px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1.5fr 3fr 1fr 1fr;
+    row-gap: 10px;
+    background-color: rgba(19, 24, 32, 0.9);
     border-radius: 5px;
-    width: 90%;
-    height: 80%;
 }
 
-.titleInicio {
-    font-family: 'BenchNine', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    text-transform: uppercase;
-    width: 90%;
-    padding: 15px 0;
-    margin-left: 5%;
-    text-align: center;
-    border-bottom: solid 1px white;
+.indexBox div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.containInicio {
-    width: 40%;
-    display: inline-block;
-    margin-left: 5%;
-    height: 90%;
+.index_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.textInicio {
-    height: 100%;
-    overflow: auto;
-    padding: 30px 0;
-    font-size: 14px;
-    text-align: justify;
-    font-weight: 300;
-}
-
-#titleInicio {
+.index_title h1 {
+    padding: 10px 0;
+    color: #ffffff;
+    min-width: 90%;
     position: absolute;
     text-align: center;
-    margin: 2.5% 13%;
-    padding-bottom: 2%;
-    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    border-bottom: solid 1px #ffffff;
+}
+
+.subtitle_size h2 {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 40%;
+    max-width: 560px;
+    font-size: 22px;
     font-weight: 400;
-    font-size: 24px;
-    margin-left: 2.5%;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #ffffff;
 }
 
-#iframeInicio {
-    width: 35%;
-    height: 30%;
-    position: relative;
-    left: 49.5%;
-    bottom: 65%;
+.index_iframe {
+    grid-column-start: 2;
 }
 
-#iframeInicio iframe {
-    width: 100%;
+.index_hiframe {
+    width: 80%;
     height: 100%;
+}
+
+.index_hiframe iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 280px;
+}
+
+.index_subtitle_two {
+    grid-row-start: 2;
+}
+
+.index_subtitle_two img {
+    width: 300px;
+}
+
+.index_subtitle_three {
+    grid-column-start: 2;
+    grid-row-end: 5;
+}
+
+.index_button {
+    grid-column-start: 2;
+    grid-row-end: 6;
+}
+
+.index_button a {
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(0, 148, 238);
+    background-color: rgb(19, 24, 32); 
+    border: solid 1px rgb(0, 148, 238);
+}
+
+.index_button a:active {
+    background-color: rgb(0, 148, 238);
+    color: #ffffff;
+}
+
+.index_image {
+    grid-row-start: 3;
 }
 
 
