@@ -15,7 +15,7 @@ body {
     line-height: 1.5;
     font-size: 14px;
     background-color: rgb(23, 30, 39);
-    background-image: url(https://www.lr21.com.uy/wp-content/uploads/2021/01/ntvg-comnoteimaginas.jpg);
+    background-image: linear-gradient(to top,rgba(23,30,39,0.8) 0%,rgba(23,30,39, 0.96) 100%),url('https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
