@@ -599,3 +599,102 @@ legend {
 .btn_send:active {
     background-color: rgb(0, 148, 238);   
 }
+
+@media (max-width: 480px) {
+
+    .menuNav li a {
+        font-size: 8px;
+        padding-inline: 7px;
+    }
+
+    .titleContain {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .divConciertos {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .containConciertos hr {
+        margin-inline: 20px;
+    }
+
+    .card__image {
+        width: 100px;
+    }
+
+    .formulario li {
+        margin-inline: 0;
+        text-align: center;
+    }
+
+    .formulario input, textarea {
+        margin-inline: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: 160px;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logoContainer {
+        width: 64px;
+        position: relative;
+        text-align: start;
+        height: 80px;
+        top: 20px;
+    }
+
+    .logoContainer img {
+        position: absolute;
+    }
+
+    .responsiveNav {
+        height: 80px;
+    }
+
+    .menuNav {
+        justify-content: center;
+    }
+
+    .divConciertos {
+        margin: 10px 0;
+    }
+
+    .divLinks {
+        flex-direction: column-reverse;
+        width: 150px;
+        gap: 10px;
+    }
+
+    .formulario input, textarea {
+        width: 90%;
+        max-width: 300px;
+        font-size: 10px;
+    }
+
+    #msg {
+        max-width: none;
+    }
+}
+
+@media (min-height: 1220px) {
+
+    main:not(.mainDiscografias) {
+        height: 1250px;
+    }
+
+}
