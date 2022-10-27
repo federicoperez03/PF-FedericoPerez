@@ -352,54 +352,75 @@ footer section {
 
 /* DISCOGRAFIAS.HTML */
 
-/* MAIN SECTION BOX */
-
-#boxDiscografias {
-    background-color: rgb(19, 24, 32);
-    text-align: center;
-    margin: 4% 0 0 0;
-    border: none;
-    width: 100%;
+.bodyDiscografias {
+    background-image: none;
 }
 
-/* MAIN SECTION TITLE */
-
-#titleDiscografias {
-    border: none;
-    margin: auto;
-    width: 100%;
+.gridDiscografias {
+    margin: 5em 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    gap: 20px;
 }
-
-/* MAIN SECTION DIV */
 
 .containDiscografias {
-    width: 15rem;
-    height: 19.5em;
-    padding: 1rem 2rem;
-    margin: 0.5rem 0;
-    background-color: rgb(19, 24, 32);
-    display: inline-block;
+    border-radius: 10px;
+    min-width: 600px;
+    height: 410px;
+    justify-self: start;
     position: relative;
+    background-color: #131820;
+}
+
+.column_end {
+    justify-self: end;
 }
 
 .containDiscografias img {
-    width: 100%;
-    height: 80%;
-    border: solid 4px rgb(23, 30, 39);;
+    position: absolute;
+    height: 264px;
+    width: 220px;
+    margin: 73px 0;
+    border: inset 2px #0094ee;
+}
+
+.column_start img {
+    left: 20px;
+}
+
+.column_end img {
+    right: 50px;
+}
+
+.textContain {
+    display: inline-block;
+    top: 25px;
+    width: 250px;
+    left: 300px;
+    position: relative;
+}
+
+.text_left {
+    left: 20px;
 }
 
 .subtitleContain {
-    font-family: 'BenchNine', sans-serif;
-    position: relative;
-    background-color: rgb(23, 30, 39);
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #0094ee;
+    text-align: center;
 }
 
-.iconContain {
-    margin: 0.5rem 0 0 5rem;
-    width: 25px;
-    text-align: center;
-    border-radius: 50px;
-    background-color: rgb(23, 30, 39);
+.textContain a {
+    background-color: #171e27;
+    color: #c8c8c8;
+    border-radius: 5px 5px 0 0;
+    border-bottom: solid 1px #0094ee;
+    text-decoration: none;
+    padding: 0.4rem;
+    margin: 5px;
+    display: block;
 }
 
 
