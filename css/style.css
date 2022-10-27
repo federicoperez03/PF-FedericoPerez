@@ -627,6 +627,8 @@ legend {
         width: 100px;
     }
 
+    
+
     .formulario li {
         margin-inline: 0;
         text-align: center;
@@ -678,6 +680,24 @@ legend {
         flex-direction: column-reverse;
         width: 150px;
         gap: 10px;
+    }
+
+    .indexBox {
+        height: 1500px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7, 125px 125px 400px 125px 125px 125px 400px);
+    }
+
+    .index_title h1, .subtitle_size h2 {
+        width: 80%;
+    }
+
+    .column_responsive {
+        grid-column: 1/2;
+    }
+
+    .index_image a img{
+        width: 250px;
     }
 
     .formulario input, textarea {
