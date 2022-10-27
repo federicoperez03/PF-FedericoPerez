@@ -11,7 +11,11 @@
 
 /* BODY */
 
-body {
+body {    
+    height: 100%;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: rgb(23, 30, 39);
     background-image: url(https://www.lr21.com.uy/wp-content/uploads/2021/01/ntvg-comnoteimaginas.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
