@@ -1,2 +1,2 @@
-# mi_repositorio
+# PreEntrega2+Pérez
 Repositorio segunda pre-entrega
