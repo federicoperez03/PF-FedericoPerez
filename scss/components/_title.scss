@@ -1,0 +1,36 @@
+@import "../utilities/colors";
+
+/* titles css */
+h1 {
+	line-height: 1.5;
+}
+h2 {
+	line-height: 1.5;
+}
+h3 {
+	line-height: 1.5;
+}
+.titleInicio {
+	position: relative;
+	width: 100%;
+	font-weight: 700;
+	text-align: center;
+	font-size: 2.25rem;
+	text-transform: uppercase;
+	padding-top: 2em;
+}
+.subtitleConciertos {
+	width: 100%;
+	font-weight: 400;
+	text-align: center;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: $white;
+}
+.titleContain {
+	font-weight: 700;
+	color: $cyan;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin: 16px 32px 0 32px;
+}

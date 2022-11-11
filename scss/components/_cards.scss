@@ -1,0 +1,103 @@
+@import "../utilities/colors";
+
+/* cards css members */
+.card_members {
+	position: relative;
+	width: 290px;
+	height: 345px;
+	border: inset 2px $cyan;
+	border-radius: 5px;
+}
+.card__image {
+	position: absolute;
+	top: 18px;
+	right: 200px;
+	width: 120px;
+	background-color: $blue-dark;
+	border-radius: 60px;
+	border: inset 2px $cyan;
+	&:hover {
+		scale: 1.1;
+		transition: 0.2s;
+	}
+}
+.card__title {
+	display: block;
+	text-align: center;
+	padding: 4px;
+	top: 36px;
+	left: 108px;
+	width: 90px;
+	font-size: 1.5rem;
+	color: $cyan;
+}
+.card__subtitle {
+	display: inline-block;
+	padding: 4px 27px;
+	left: 108px;
+	top: 39px;
+	font-size: 0.875rem;
+	color: $grey;
+}
+.card__description {
+	display: block;
+	text-align: center;
+	text-align: justify;
+	padding: 0 8px;
+	top: 73px;
+	left: 14px;
+	width: 90%;
+	font-size: 0.875rem;
+	font-weight: 300;
+}
+.card__position {
+	position: relative;
+	background-color: $blue-dark;
+	border-radius: 5px;
+}
+
+/* cards css discography */
+.card_discography {
+	border-radius: 10px;
+	background-color: $blue-grayish-dark;
+	position: relative;
+	width: 37.5rem;
+	list-style-type: none;
+}
+.subtitle_d-card {
+	text-align: end;
+	text-transform: uppercase;
+	color: $cyan;
+	font-size: 1.5rem;
+	padding-right: 6rem;
+	margin-top: 1.5rem;
+}
+.div_d-card {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	img {
+		width: 13.75rem;
+		height: 16.5rem;
+		margin: 30px;
+		border: inset 2px $cyan;
+	}
+}
+.contain_d-card {
+	margin-right: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	a {
+		width: 75%;
+		background-color: $blue-dark;
+		color: $white;
+		border-radius: 5px 5px 0 0;
+		border-bottom: solid 1px #0094ee;
+		text-decoration: none;
+		padding: 0.4rem;
+		margin: 5px;
+	}
+}

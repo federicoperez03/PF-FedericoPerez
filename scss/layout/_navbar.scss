@@ -1,0 +1,81 @@
+@import "../utilities/colors";
+@import "../utilities/typhography";
+
+/* navbar css */
+header {
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color: $blue-dark;
+	box-shadow: 6px 0 4px 6px rgb(13, 17, 22);
+}
+nav {
+	height: 100%;
+}
+.container {
+	background-color: $blue-dark;
+}
+.nav-logo {
+	width: 64px;
+	&:hover {
+		background-color: $blue-grayish-dark;
+		border-radius: 40px;
+		scale: 1.1;
+		transition: 0.1s;
+	}
+}
+.navbar-toggler {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&:active {
+		outline: none;
+		box-shadow: none;
+	}
+}
+.navbar-toggler-icon {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+.toggler-icon {
+	cursor: pointer;
+	width: 30px;
+	height: 3px;
+	background-color: $white;
+	display: block;
+	transition: all 0.3s;
+}
+.middle-bar {
+	margin: 5px 0;
+	&:active {
+		margin-left: 15px;
+	}
+}
+.menuNav {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+	li {
+		display: inline-block;
+		-webkit-padding-before: 35px;
+		margin: 0 2px;
+		a {
+			text-decoration: none;
+			font-size: 0.9em;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-family: $font_inter;
+			padding: 35px 10px 20px 10px;
+			color: $white;
+			&:hover {
+				background-color: $blue-grayish-dark_09;
+				border-bottom: solid 3px rgb(0, 148, 238);
+				transition: all 0.1s;
+				color: $cyan;
+			}
+		}
+	}
+}

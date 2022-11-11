@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="keywords" content="ntvg, no te va a gustar, musica, rock, banda, por lo menos hoy, luz, sin pena ni gloria, volar, chau, a las nueve, cero a la izquierda, el calor del pleno invierno, emiliano brancciari">
+    <meta name="description" content="Somos una página dedicada a No Te Va a Gustar, ¡aquí encontrarás fechas de sus conciertos, giras y mucho más!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/style.css">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +22,20 @@
 <body>
 
     <header>
-
-        <div class="headerContainer">
-            <div class="logoContainer">
-                <a href="../index.html" class="logoBar">
-                    <img src="../assets/images/ntvglogo.png" alt="logo ntvg header">
+        <nav class="navbar navbar-expand-md" aria-label="Eighth navbar example">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="nav-logo" src="../assets/images/ntvglogo.png" alt="logo_ntvg">
                 </a>
-            </div>
+                <button class="navbar-toggler collapesed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
 
-            <div class="responsiveNav">
-                <nav>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarsExample07">
                     <ul class="menuNav">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./miembros.html">Miembros</a></li>
@@ -34,10 +43,9 @@
                         <li><a href="./conciertos.html">Conciertos</a></li>
                         <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
-
+        </nav>
     </header>
 
     <main>
@@ -48,56 +56,56 @@
 
             <article class="boxMiembros">
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 1</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                         <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 2</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                     <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 3</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                     <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 4</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                     <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 5</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                     <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 6</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                     <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 7</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
                     <p class="card__description card__position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis saepe vero maiores. Quas quod quia perferendis enim pariatur, deleniti architecto repellendus, adipisci quis molestiae facere ratione iusto numquam, dicta tenetur et voluptate sunt! Porro laboriosam maiores error assumenda sed ducimus animi iusto, similique optio exercitationem unde cumque, non, tempora placeat ea iste! Mollitia labore error consectetur, adipisci magni odio?</p>
                 </div>
 
-                <div class="card">
+                <div class="card_members">
                     <img class="card__image" src="../assets/images/ntvglogo.png" alt="perfil de miembro">
                         <h2 class="card__title card__position">Miembro 8</h2>
                         <h3 class="card__subtitle card__position">Rol</h3>
@@ -153,6 +161,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

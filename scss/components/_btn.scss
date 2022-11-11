@@ -1,0 +1,15 @@
+@import "../utilities/colors";
+
+/* btn css */
+.btn_send {
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 0.8rem 1.6rem;
+	border: solid 1px rgb(19, 24, 32);
+	background-color: $blue-navy;
+	color: $white;
+	border-radius: 5px;
+	&:active {
+		background-color: $cyan;
+	}
+}
