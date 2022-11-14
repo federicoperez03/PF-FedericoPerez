@@ -6,6 +6,7 @@
   font-family: "BenchNine", sans-serif;
 }
 
+/* colors css */ /* typhography css */ /* colors css */ /* typhography css */
 /* navbar css */
 header {
   display: block;
@@ -20,6 +21,7 @@ nav {
 }
 
 .container {
+  z-index: 1;
   background-color: #171e27;
 }
 
@@ -88,6 +90,8 @@ nav {
   transition: all 0.1s;
   color: #0094ee;
 }
+
+/* colors css */
 /* footer css */
 footer {
   display: block;
@@ -129,6 +133,7 @@ footer section {
   scale: 1.1;
 }
 
+/* colors css */
 /* grid css */
 .indexBox {
   display: grid;
@@ -220,6 +225,7 @@ footer section {
   grid-row-start: 3;
 }
 
+/* colors css */
 /* titles css */
 h1 {
   line-height: 1.5;
@@ -249,7 +255,7 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: rgba(200, 200, 200, 0.8745098039);
+  color: #ffffff;
 }
 
 .titleContain {
@@ -260,6 +266,7 @@ h3 {
   margin: 16px 32px 0 32px;
 }
 
+/* colors css */
 /* cards css members */
 .card_members {
   position: relative;
@@ -370,6 +377,7 @@ h3 {
   margin: 5px;
 }
 
+/* colors css */
 /* btn css */
 .btn_send {
   font-size: 1rem;
@@ -384,6 +392,7 @@ h3 {
   background-color: #0094ee;
 }
 
+/* colors css */ /* typhography css */
 /* contact css */
 form {
   margin: 5em 5%;
@@ -462,129 +471,7 @@ textarea {
   width: 100%;
 }
 
-/* media queries css */
-@media (max-width: 480px) {
-  .titleContain {
-    padding: 10px;
-    text-align: center;
-  }
-  .divConciertos {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .containConciertos hr {
-    margin-inline: 20px;
-  }
-  .card__image {
-    width: 100px;
-  }
-  .formulario li {
-    margin-inline: 0;
-    text-align: center;
-  }
-  .formulario input {
-    margin-inline: auto;
-  }
-  textarea {
-    margin-inline: auto;
-  }
-}
-@media (max-width: 640px) {
-  .subtitle_d-card {
-    text-align: center;
-    padding: 0;
-  }
-  .div_d-card {
-    flex-direction: column;
-  }
-  .div_d-card img {
-    width: 12.375rem;
-    height: 14.875rem;
-  }
-  .contain_d-card {
-    margin: auto;
-  }
-  .contain_d-card a {
-    width: 80%;
-  }
-}
-@media (max-width: 767px) {
-  .navbar-toggler {
-    height: 50px;
-  }
-  .nav-logo {
-    width: 50px;
-  }
-  .menuNav {
-    margin-top: 15px;
-    border-top: solid 1px rgba(255, 255, 255, 0.2117647059);
-    height: 400px;
-    text-align: start;
-    align-items: flex-end;
-    flex-direction: column;
-    padding: 0 0 1rem 0;
-  }
-  .menuNav li {
-    display: block;
-    height: 100%;
-    width: 90%;
-    margin: auto;
-    position: relative;
-    padding: 20px 0;
-    border-bottom: solid 1px #0094ee;
-  }
-  .menuNav li a {
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-  }
-  .divConciertos {
-    margin: 10px 0;
-  }
-  .divLinks {
-    flex-direction: column-reverse;
-    width: 150px;
-    gap: 10px;
-  }
-  .indexBox {
-    height: 1500px;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(7, 125px 125px 400px 125px 125px 125px 400px);
-  }
-  .index_title h1 {
-    width: 80%;
-  }
-  .subtitle_size h2 {
-    width: 80%;
-  }
-  .column_responsive {
-    grid-column: 1/2;
-  }
-  .index_image a img {
-    width: 250px;
-  }
-  .formulario input {
-    width: 90%;
-    max-width: 300px;
-  }
-  textarea {
-    width: 90%;
-    max-width: 300px;
-  }
-  #msg {
-    max-width: none;
-  }
-}
-@media (min-height: 1220px) {
-  main:not(.mainDiscografias) {
-    height: 1250px;
-  }
-}
-
+/* colors css */ /* typhography css */
 /* home css */
 /* BODY */
 body {
@@ -712,4 +599,127 @@ main {
 .boxContacto hr {
   margin-inline: 40px;
   border-color: rgba(200, 200, 200, 0.8745098039);
+}
+
+/* media queries css */
+@media (max-width: 480px) {
+  .titleContain {
+    padding: 10px;
+    text-align: center;
+  }
+  .divConciertos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .containConciertos hr {
+    margin-inline: 20px;
+  }
+  .card__image {
+    width: 100px;
+  }
+  .formulario li {
+    margin-inline: 0;
+    text-align: center;
+  }
+  .formulario input {
+    margin-inline: auto;
+  }
+  textarea {
+    margin-inline: auto;
+  }
+}
+@media (max-width: 640px) {
+  .subtitle_d-card {
+    text-align: center;
+    padding: 0;
+  }
+  .div_d-card {
+    flex-direction: column;
+  }
+  .div_d-card img {
+    width: 12.375rem;
+    height: 14.875rem;
+  }
+  .contain_d-card {
+    margin: auto;
+  }
+  .contain_d-card a {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-toggler {
+    height: 50px;
+  }
+  .nav-logo {
+    width: 50px;
+  }
+  .menuNav {
+    margin-top: 15px;
+    border-top: solid 1px rgba(255, 255, 255, 0.2117647059);
+    height: 400px;
+    text-align: start;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 0 0 1rem 0;
+  }
+  .menuNav li {
+    display: block;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 20px 0;
+    border-bottom: solid 1px #0094ee;
+  }
+  .menuNav li a {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+  }
+  .divConciertos {
+    margin: 10px 0;
+  }
+  .divLinks {
+    width: 150px;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .indexBox {
+    height: 1500px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, 125px 125px 400px 125px 125px 125px 400px);
+  }
+  .index_title h1 {
+    width: 80%;
+  }
+  .subtitle_size h2 {
+    width: 80%;
+  }
+  .column_responsive {
+    grid-column: 1/2;
+  }
+  .index_image a img {
+    width: 250px;
+  }
+  .formulario input {
+    width: 90%;
+    max-width: 300px;
+  }
+  textarea {
+    width: 90%;
+    max-width: 300px;
+  }
+  #msg {
+    max-width: none;
+  }
+}
+@media (min-height: 1220px) {
+  main:not(.mainDiscografias) {
+    height: 1250px;
+  }
 }/*# sourceMappingURL=style.css.map */
