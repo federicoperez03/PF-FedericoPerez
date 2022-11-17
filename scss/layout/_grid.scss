@@ -24,7 +24,7 @@
 		position: absolute;
 		text-align: center;
 		text-transform: uppercase;
-		font-size: 2.25rem;
+		font-size: map-get($f-sizes, thirty-six_px);
 		border-bottom: solid 1px #ffffff;
 	}
 }
@@ -35,7 +35,7 @@
 		position: absolute;
 		width: 40%;
 		max-width: 560px;
-		font-size: 1.375rem;
+		font-size: map-get($f-sizes, twenty-two_px);
 		font-weight: 400;
 		border-bottom: solid 1px #ffffff;
 	}
@@ -69,7 +69,7 @@
 		padding: 10px 30px;
 		margin-bottom: 15px;
 		text-decoration: none;
-		font-size: 1.125rem;
+		font-size: map-get($f-sizes, eighteen_px);
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $cyan;

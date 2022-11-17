@@ -1,5 +1,6 @@
 @import "../utilities/colors";
 @import "../utilities/typhography";
+@import "../utilities/fonts";
 
 /* home css */
 /* BODY */
@@ -7,7 +8,7 @@ body {
 	color: #ffffff;
 	height: 100%;
 	line-height: 1.5;
-	font-size: 0.875rem;
+	font-size: map-get($f-sizes, fourteen_px);
 	background-color: $blue-dark;
 	background-image: linear-gradient(to top,rgba(23,30,39,0.8) 0%,rgba(23,30,39, 0.96) 100%),url('https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg');
 	background-repeat: no-repeat;
@@ -83,7 +84,7 @@ main {
 		margin: 0 0 0 0.5rem;
 		width: 200px;
 		font-weight: 400;
-		font-size: 1rem;
+		font-size: map-get($f-sizes, sixteen_px);
 		padding: 15px 0;
 	}
 }
@@ -95,7 +96,7 @@ main {
 	justify-content: space-evenly;
 	a {
 		text-decoration: none;
-		font-size: 1.125rem;
+		font-size: map-get($f-sizes, eighteen_px);
 		text-transform: uppercase;
 		font-weight: 700;
 		border: solid 1px rgb(0, 148, 238);

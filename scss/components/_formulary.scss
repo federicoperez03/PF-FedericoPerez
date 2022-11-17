@@ -1,5 +1,6 @@
 @import "../utilities/colors";
 @import "../utilities/typhography";
+@import "../utilities/fonts";
 
 /* contact css */
 form {
@@ -15,7 +16,7 @@ fieldset {
 legend {
 	padding: 5px;
 	font-weight: 700;
-	font-size: 2.25rem;
+	font-size: map-get($f-sizes, thirty-six_px);
 	text-transform: uppercase;
 	text-align: center;
 }

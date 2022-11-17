@@ -1,5 +1,7 @@
 @import "../utilities/colors";
 @import "../utilities/typhography";
+@import "../utilities/fonts";
+@import "../utilities/mixin";
 
 /* navbar css */
 header {
@@ -56,7 +58,7 @@ nav {
 	}
 }
 .menuNav {
-	display: flex;
+	@include flex;
 	justify-content: flex-end;
 	height: 100%;
 	li {
@@ -65,7 +67,7 @@ nav {
 		margin: 0 2px;
 		a {
 			text-decoration: none;
-			font-size: 0.9em;
+			font-size: map-get($f-sizes, twelve_px);
 			font-weight: 700;
 			text-transform: uppercase;
 			font-family: $font_inter;

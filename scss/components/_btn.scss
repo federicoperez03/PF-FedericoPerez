@@ -1,8 +1,9 @@
 @import "../utilities/colors";
+@import "../utilities/fonts";
 
 /* btn css */
 .btn_send {
-	font-size: 1rem;
+	font-size: map-get($f-sizes, sixteen_px);
 	text-transform: uppercase;
 	padding: 0.8rem 1.6rem;
 	border: solid 1px rgb(19, 24, 32);
