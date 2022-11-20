@@ -97,18 +97,14 @@
 	}
 	.index_div-img {
 		span {
-			position: relative;
-			top: 120px;
+			position: absolute;
 			width: 100%;
 			left: 0;
-			margin: auto;
 		}
 		p {
-			position: absolute;
-			top: 180px;
+			top: 80px;
 			left: 0;
 			width: 100%;
-			margin: auto;
 			padding-inline: 2rem;
 			text-align: justify;
 		}
@@ -116,6 +112,9 @@
 	.index_iframe{
 		div{
 			right: 0;
+			iframe{
+				padding: 0 15px 15px 15px;
+			}
 		}
 	}
 	.container div {
