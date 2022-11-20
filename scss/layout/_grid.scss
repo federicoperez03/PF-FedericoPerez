@@ -3,25 +3,26 @@
 /* grid css */
 .indexBox {
 	display: grid;
+	justify-items: center;
+	align-items: center;
 	position: relative;
 	margin: 5% auto;
 	max-width: 1200px;
 	height: 950px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr 1.5fr 3fr 1fr 1fr;
-	row-gap: 10px;
+	grid-gap: 10px;
 	background-color: $blue-grayish-dark_09;
 	border-radius: 5px;
-	z-index: -1;
 }
 .index_title {
 	grid-column-start: 1;
 	grid-column-end: 3;
+	width: 90%;
 	h1 {
 		padding: 10px 0;
 		color: $white;
 		min-width: 90%;
-		position: absolute;
 		text-align: center;
 		text-transform: uppercase;
 		font-size: map-get($f-sizes, thirty-six_px);
@@ -32,30 +33,35 @@
 	h2 {
 		text-align: center;
 		padding: 10px 0;
-		position: absolute;
-		width: 40%;
-		max-width: 560px;
+		width: 90%;
 		font-size: map-get($f-sizes, twenty-two_px);
 		font-weight: 400;
 		border-bottom: solid 1px #ffffff;
 	}
 }
 .index_iframe {
-	grid-column-start: 2;
-}
-.index_hiframe {
-	width: 80%;
+	width: 100%;
 	height: 100%;
-	iframe {
-		width: 100%;
-		max-width: 560px;
-		height: 280px;
+	padding: 30px;
+	div {
+		right: 5%;
+		position: relative;
+		overflow: hidden;
+		padding-top: 56.25%;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
 .index_subtitle_two {
+	width: 80%;
 	grid-row-start: 2;
-	img {
-		width: 300px;
+	h2 {
+		width: 100%;
 	}
 }
 .index_subtitle_three {
@@ -66,8 +72,9 @@
 	grid-column-start: 2;
 	grid-row-end: 6;
 	a {
+		position: relative;
+		right: 25px;
 		padding: 10px 30px;
-		margin-bottom: 15px;
 		text-decoration: none;
 		font-size: map-get($f-sizes, eighteen_px);
 		font-weight: 700;

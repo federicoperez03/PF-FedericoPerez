@@ -1,7 +1,13 @@
 @import "../utilities/mixin";
+@import "../utilities/fonts";
 
 /* media queries css */
 @media (max-width: 480px) {
+	.index_div-img {
+		p {
+			font-size: map-get($f-sizes, twenty_px);
+		}
+	}
 	.titleContain {
 		padding: 10px;
 		text-align: center;
@@ -53,6 +59,11 @@
 	}
 }
 @media (max-width: 767px) {
+	header{
+		&::before{
+			right: 0;
+		}
+	}
 	.navbar-toggler {
 		height: 50px;
 	}
@@ -84,6 +95,33 @@
 			}
 		}
 	}
+	.index_div-img {
+		span {
+			position: relative;
+			top: 120px;
+			width: 100%;
+			left: 0;
+			margin: auto;
+		}
+		p {
+			position: absolute;
+			top: 180px;
+			left: 0;
+			width: 100%;
+			margin: auto;
+			padding-inline: 2rem;
+			text-align: justify;
+		}
+	}
+	.index_iframe{
+		div{
+			right: 0;
+		}
+	}
+	.container div {
+		background-color: $blue-dark;
+		margin-top: 12px;
+	}
 	.divConciertos {
 		margin: 10px 0;
 	}
@@ -97,14 +135,15 @@
 		grid-template-columns: 100%;
 		grid-template-rows: repeat(7, 125px 125px 400px 125px 125px 125px 400px);
 	}
-	.index_title {
-		h1 {
+	.subtitle_size {
+		h2 {
+			margin: auto;
 			width: 80%;
 		}
 	}
-	.subtitle_size {
-		h2 {
-			width: 80%;
+	.index_button{
+		a{
+			position: initial;
 		}
 	}
 	.column_responsive {
@@ -129,6 +168,16 @@
 	}
 	#msg {
 		max-width: none;
+	}
+}
+@media (min-width: 1440px){
+	.index_div-img{
+		span {
+			left: 17%;
+		}
+		p {
+			left: 17%;
+		}
 	}
 }
 @media (min-height: 1220px) {

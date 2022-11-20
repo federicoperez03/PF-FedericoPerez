@@ -6,23 +6,36 @@
   font-family: "BenchNine", sans-serif;
 }
 
-/* colors css */ /* typhography css */ /* colors css */ /* typhography css */
+/* colors css */ /* typhography css */ /* fonts size css - map-get */ /* colors css */ /* typhography css */ /* fonts size css - map-get */ /* mixin css */
 /* navbar css */
 header {
+  position: relative;
   display: block;
   width: 100%;
   height: 80px;
   background-color: #171e27;
   box-shadow: 6px 0 4px 6px rgb(13, 17, 22);
 }
-
-nav {
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 40%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/images/stelars.png);
+  background-size: cover;
+  background-position: top;
+}
+header nav {
+  background-color: transparent;
   height: 100%;
 }
 
 .container {
-  z-index: 1;
   background-color: #171e27;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .nav-logo {
@@ -77,7 +90,7 @@ nav {
 }
 .menuNav li a {
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.79rem;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
@@ -91,7 +104,7 @@ nav {
   color: #0094ee;
 }
 
-/* colors css */
+/* colors css */ /* mixin css */
 /* footer css */
 footer {
   display: block;
@@ -99,6 +112,18 @@ footer {
   height: 120px;
   background-color: #171e27;
   box-shadow: 6px 0 4px 6px rgba(13, 17, 22, 0.9);
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  background-image: url(../../assets/images/stelars.png);
+  background-size: 100% 200%;
+  background-position: center;
+  background-repeat: repeat-x;
 }
 footer section {
   position: absolute;
@@ -137,27 +162,28 @@ footer section {
 /* grid css */
 .indexBox {
   display: grid;
+  justify-items: center;
+  align-items: center;
   position: relative;
   margin: 5% auto;
   max-width: 1200px;
   height: 950px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1.5fr 3fr 1fr 1fr;
-  row-gap: 10px;
+  grid-gap: 10px;
   background-color: rgba(19, 24, 32, 0.9019607843);
   border-radius: 5px;
-  z-index: -1;
 }
 
 .index_title {
   grid-column-start: 1;
   grid-column-end: 3;
+  width: 90%;
 }
 .index_title h1 {
   padding: 10px 0;
   color: #ffffff;
   min-width: 90%;
-  position: absolute;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.25rem;
@@ -167,33 +193,37 @@ footer section {
 .subtitle_size h2 {
   text-align: center;
   padding: 10px 0;
-  position: absolute;
-  width: 40%;
-  max-width: 560px;
+  width: 90%;
   font-size: 1.375rem;
   font-weight: 400;
   border-bottom: solid 1px #ffffff;
 }
 
 .index_iframe {
-  grid-column-start: 2;
-}
-
-.index_hiframe {
-  width: 80%;
-  height: 100%;
-}
-.index_hiframe iframe {
   width: 100%;
-  max-width: 560px;
-  height: 280px;
+  height: 100%;
+  padding: 30px;
+}
+.index_iframe div {
+  right: 5%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.index_iframe div iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .index_subtitle_two {
+  width: 80%;
   grid-row-start: 2;
 }
-.index_subtitle_two img {
-  width: 300px;
+.index_subtitle_two h2 {
+  width: 100%;
 }
 
 .index_subtitle_three {
@@ -206,8 +236,9 @@ footer section {
   grid-row-end: 6;
 }
 .index_button a {
+  position: relative;
+  right: 25px;
   padding: 10px 30px;
-  margin-bottom: 15px;
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 700;
@@ -225,7 +256,7 @@ footer section {
   grid-row-start: 3;
 }
 
-/* colors css */
+/* colors css */ /* fonts size css - map-get */
 /* titles css */
 h1 {
   line-height: 1.5;
@@ -266,7 +297,7 @@ h3 {
   margin: 16px 32px 0 32px;
 }
 
-/* colors css */
+/* colors css */ /* fonts size css - map-get */ /* mixin css */
 /* cards css members */
 .card_members {
   position: relative;
@@ -377,7 +408,7 @@ h3 {
   margin: 5px;
 }
 
-/* colors css */
+/* colors css */ /* fonts size css - map-get */
 /* btn css */
 .btn_send {
   font-size: 1rem;
@@ -392,7 +423,7 @@ h3 {
   background-color: #0094ee;
 }
 
-/* colors css */ /* typhography css */
+/* colors css */ /* typhography css */ /* fonts size css - map-get */
 /* contact css */
 form {
   margin: 5em 5%;
@@ -472,20 +503,14 @@ textarea {
   width: 100%;
 }
 
-/* colors css */ /* typhography css */
+/* colors css */ /* typhography css */ /* fonts size css - map-get */
 /* home css */
 /* BODY */
 body {
   color: #ffffff;
-  height: 100%;
   line-height: 1.5;
   font-size: 0.875rem;
   background-color: #171e27;
-  background-image: linear-gradient(to top, rgba(23, 30, 39, 0.8) 0%, rgba(23, 30, 39, 0.96) 100%), url("https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 
 /* MAIN */
@@ -494,10 +519,25 @@ main {
 }
 
 /* INDEX.HTML */
-.indexBox div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.index_div-img {
+  height: 20rem;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(23, 30, 39, 0.3) 0%, rgba(23, 30, 39, 0.96) 100%), url("https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg");
+  background-position: center 30%;
+}
+.index_div-img span {
+  text-shadow: 3px 3px 2px #131820;
+  padding: 0;
+  top: 30px;
+  left: 120px;
+  color: #0094ee;
+}
+.index_div-img p {
+  width: 500px;
+  position: relative;
+  left: 80px;
+  top: 30px;
+  font-size: 1.5rem;
 }
 
 /* MIEMBROS.HTML */
@@ -602,8 +642,12 @@ main {
   border-color: rgba(200, 200, 200, 0.8745098039);
 }
 
+/* mixin css */ /* fonts size css - map-get */
 /* media queries css */
 @media (max-width: 480px) {
+  .index_div-img p {
+    font-size: 1.25rem;
+  }
   .titleContain {
     padding: 10px;
     text-align: center;
@@ -651,6 +695,9 @@ main {
   }
 }
 @media (max-width: 767px) {
+  header::before {
+    right: 0;
+  }
   .navbar-toggler {
     height: 50px;
   }
@@ -682,6 +729,29 @@ main {
     width: 100%;
     position: absolute;
   }
+  .index_div-img span {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    left: 0;
+    margin: auto;
+  }
+  .index_div-img p {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding-inline: 2rem;
+    text-align: justify;
+  }
+  .index_iframe div {
+    right: 0;
+  }
+  .container div {
+    background-color: #171e27;
+    margin-top: 12px;
+  }
   .divConciertos {
     margin: 10px 0;
   }
@@ -695,11 +765,12 @@ main {
     grid-template-columns: 100%;
     grid-template-rows: repeat(7, 125px 125px 400px 125px 125px 125px 400px);
   }
-  .index_title h1 {
+  .subtitle_size h2 {
+    margin: auto;
     width: 80%;
   }
-  .subtitle_size h2 {
-    width: 80%;
+  .index_button a {
+    position: initial;
   }
   .column_responsive {
     grid-column: 1/2;
@@ -717,6 +788,14 @@ main {
   }
   #msg {
     max-width: none;
+  }
+}
+@media (min-width: 1440px) {
+  .index_div-img span {
+    left: 17%;
+  }
+  .index_div-img p {
+    left: 17%;
   }
 }
 @media (min-height: 1220px) {

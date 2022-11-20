@@ -6,26 +6,33 @@
 /* BODY */
 body {
 	color: #ffffff;
-	height: 100%;
 	line-height: 1.5;
 	font-size: map-get($f-sizes, fourteen_px);
 	background-color: $blue-dark;
-	background-image: linear-gradient(to top,rgba(23,30,39,0.8) 0%,rgba(23,30,39, 0.96) 100%),url('https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
 }
 /* MAIN */
 main {
 	display: block;
 }
 /* INDEX.HTML */
-.indexBox {
-	div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.index_div-img {
+	height: 20rem;
+	width: 100%;
+	background-image: linear-gradient(to left, rgba(23, 30, 39, 0.3) 0%, rgba(23, 30, 39, 0.96) 100%), url("https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg");
+	background-position: center 30%;
+	span {
+		text-shadow: 3px 3px 2px $blue-grayish-dark;
+		padding: 0;
+		top: 30px;
+		left: 120px;
+		color: $cyan;
+	}
+	p {
+		width: 500px;
+		position: relative;
+		left: 80px;
+		top: 30px;
+		font-size: map-get($f-sizes, twenty-four_px);
 	}
 }
 /* MIEMBROS.HTML */
@@ -34,7 +41,7 @@ main {
 	padding-bottom: 150px;
 }
 .boxMiembros {
-	display: flex;
+	@include flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	max-width: 1440px;
@@ -47,7 +54,7 @@ main {
 	background-image: none;
 }
 .div_discography {
-	display: flex;
+	@include flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	gap: 20px;
@@ -73,7 +80,7 @@ main {
 	}
 }
 .divConciertos {
-	display: flex;
+	@include flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
@@ -91,7 +98,7 @@ main {
 .divLinks {
 	width: 350px;
 	margin-inline: 7.1px;
-	display: flex;
+	@include flex;
 	align-items: center;
 	justify-content: space-evenly;
 	a {
