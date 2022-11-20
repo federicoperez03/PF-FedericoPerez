@@ -23,7 +23,7 @@ header::before {
   right: 40%;
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/images/stelars.png);
+  background-image: url(../../assets/images/stelars-blue.png);
   background-size: cover;
   background-position: top;
 }
