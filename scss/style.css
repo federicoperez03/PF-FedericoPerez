@@ -697,6 +697,8 @@ main {
 @media (max-width: 767px) {
   header::before {
     right: 0;
+    background-position: 90% 1%;
+    background-size: auto;
   }
   .navbar-toggler {
     height: 50px;
