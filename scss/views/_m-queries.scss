@@ -62,6 +62,8 @@
 	header{
 		&::before{
 			right: 0;
+			background-attachment: fixed;
+			background-position: right;
 		}
 	}
 	.navbar-toggler {
