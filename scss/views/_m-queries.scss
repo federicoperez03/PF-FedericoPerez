@@ -25,6 +25,7 @@
 	}
 	.card__image {
 		width: 100px;
+		top: 28px;
 	}
 	.formulario {
 		li {
@@ -66,6 +67,13 @@
 			background-size: auto;
 		}
 	}
+	footer{
+		&::before{
+			background-position: 90% 1%;
+			background-size: auto;
+			transform: rotatex(180deg);
+		}
+	}
 	.navbar-toggler {
 		height: 50px;
 	}
@@ -73,8 +81,9 @@
 		width: 50px;
 	}
 	.menuNav {
-		margin-top: 15px;
-		border-top: solid 1px #ffffff36;
+		margin: 5px 0 0 0;
+		border-top: solid 1px $blue-navy;
+		border-bottom: solid 1px $blue-navy;
 		height: 400px;
 		text-align: start;
 		align-items: flex-end;

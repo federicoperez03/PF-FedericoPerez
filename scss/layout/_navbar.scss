@@ -27,6 +27,9 @@ nav {
 	height: 100%;
 	}
 }
+.navbar {
+	--bs-navbar-padding-y: 0.7rem;
+}
 .container {
 	background-color: $blue-dark;
 	z-index: 1;

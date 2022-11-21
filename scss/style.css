@@ -32,6 +32,10 @@ header nav {
   height: 100%;
 }
 
+.navbar {
+  --bs-navbar-padding-y: 0.7rem;
+}
+
 .container {
   background-color: #171e27;
   z-index: 1;
@@ -327,7 +331,7 @@ h3 {
   padding: 4px;
   top: 36px;
   left: 108px;
-  width: 90px;
+  width: 50%;
   font-size: 1.5rem;
   color: #0094ee;
 }
@@ -571,7 +575,6 @@ main {
 
 /* CONCIERTOS.HTML */
 .boxConciertos {
-  position: relative;
   width: 100%;
   background-color: #131820;
   padding-bottom: 2em;
@@ -597,14 +600,19 @@ main {
   width: 100%;
   padding-inline: 30px;
 }
-.divConciertos p {
+.divConciertos div {
+  margin: 0.9rem 0.5rem;
+}
+.divConciertos div span {
+  display: block;
   font-family: "Inter", sans-serif;
-  line-height: 1.2;
-  margin: 0 0 0 0.5rem;
+  line-height: 1.4;
   width: 200px;
   font-weight: 400;
   font-size: 1rem;
-  padding: 15px 0;
+}
+.divConciertos div span:first-child {
+  font-weight: 700;
 }
 
 .divLinks {
@@ -663,6 +671,7 @@ main {
   }
   .card__image {
     width: 100px;
+    top: 28px;
   }
   .formulario li {
     margin-inline: 0;
@@ -700,6 +709,11 @@ main {
     background-position: 90% 1%;
     background-size: auto;
   }
+  footer::before {
+    background-position: 90% 1%;
+    background-size: auto;
+    transform: rotatex(180deg);
+  }
   .navbar-toggler {
     height: 50px;
   }
@@ -707,8 +721,9 @@ main {
     width: 50px;
   }
   .menuNav {
-    margin-top: 15px;
-    border-top: solid 1px rgba(255, 255, 255, 0.2117647059);
+    margin: 5px 0 0 0;
+    border-top: solid 1px #004c92;
+    border-bottom: solid 1px #004c92;
     height: 400px;
     text-align: start;
     align-items: flex-end;
