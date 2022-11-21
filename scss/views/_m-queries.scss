@@ -61,6 +61,8 @@
 }
 @media (max-width: 767px) {
 	header{
+		position: fixed;
+		z-index: 1;
 		&::before{
 			right: 0;
 			background-position: 90% 1%;
@@ -105,6 +107,9 @@
 				position: absolute;
 			}
 		}
+	}
+	main{
+		padding-top: 5rem;
 	}
 	.index_div-img {
 		span {
