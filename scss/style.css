@@ -820,9 +820,4 @@ main {
   .index_div-img p {
     left: 17%;
   }
-}
-@media (min-height: 1220px) {
-  main:not(.mainDiscografias) {
-    height: 1250px;
-  }
 }/*# sourceMappingURL=style.css.map */
