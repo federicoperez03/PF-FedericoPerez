@@ -6,6 +6,7 @@
   font-family: "BenchNine", sans-serif;
 }
 
+/* colors css */ /* typhography css */ /* fonts size css - map-get */ /* colors css */ /* typhography css */ /* fonts size css - map-get */ /* mixin css */
 /* navbar css */
 header {
   position: relative;
@@ -108,6 +109,7 @@ header nav {
   color: #0094ee;
 }
 
+/* colors css */ /* mixin css */
 /* footer css */
 footer {
   display: block;
@@ -161,6 +163,7 @@ footer section {
   scale: 1.1;
 }
 
+/* colors css */
 /* grid css */
 .indexBox {
   display: grid;
@@ -257,6 +260,7 @@ footer section {
   grid-row-start: 3;
 }
 
+/* colors css */ /* fonts size css - map-get */
 /* titles css */
 h1 {
   line-height: 1.5;
@@ -297,6 +301,7 @@ h3 {
   margin: 16px 32px 0 32px;
 }
 
+/* colors css */ /* fonts size css - map-get */ /* typhography css */ /* mixin css */
 /* cards css members */
 .card_members {
   position: relative;
@@ -442,6 +447,7 @@ h3 {
   background-color: #0094ee;
 }
 
+/* colors css */ /* fonts size css - map-get */
 /* btn css */
 .btn_send {
   font-size: 1rem;
@@ -456,6 +462,7 @@ h3 {
   background-color: #0094ee;
 }
 
+/* colors css */ /* typhography css */ /* fonts size css - map-get */
 /* contact css */
 form {
   margin: 0 5%;
@@ -570,7 +577,7 @@ textarea {
     transform: rotate(45deg);
   }
 }
-
+/* colors css */ /* typhography css */ /* fonts size css - map-get */
 /* home css */
 /* BODY */
 body {
@@ -593,9 +600,9 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(https://iili.io/H2aBnl2.png);
   background-size: auto;
   background-attachment: fixed;
+  background-image: url(https://iili.io/H2aBnl2.png);
   background-position: 35% 64%;
 }
 
