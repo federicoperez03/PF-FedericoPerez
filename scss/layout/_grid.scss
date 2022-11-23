@@ -5,7 +5,8 @@
 	display: grid;
 	justify-items: center;
 	align-items: center;
-	margin: 5rem auto 0 auto;
+	position: relative;
+	margin: 5% auto;
 	max-width: 1200px;
 	height: 950px;
 	grid-template-columns: repeat(2, 1fr);

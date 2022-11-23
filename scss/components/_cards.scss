@@ -1,6 +1,5 @@
 @import "../utilities/colors";
 @import "../utilities/fonts";
-@import "../utilities/typhography";
 @import "../utilities/mixin";
 
 /* cards css members */
@@ -47,10 +46,10 @@
 	text-align: center;
 	text-align: justify;
 	padding: 0 8px;
-	top: 57px;
+	top: 73px;
 	left: 14px;
 	width: 90%;
-	font-size: map-get($f-sizes, fifteen_px);
+	font-size: map-get($f-sizes, fourteen_px);
 	font-weight: 300;
 }
 .card__position {
@@ -62,52 +61,28 @@
 /* cards css discography */
 .card_discography {
 	border-radius: 10px;
-	background-color: $blue-grayish-dark_05;
+	background-color: $blue-grayish-dark;
 	position: relative;
 	width: 37.5rem;
 	list-style-type: none;
-	>a{
-		position: absolute;
-		width: 32px;
-		top: 25px;
-		left: 20px;
-		>img{
-			animation-name: rotate_s;
-			animation-duration: 1.8s;
-			animation-iteration-count: infinite;
-			animation-delay: 0.3s;
-		}
-	}
 }
 .subtitle_d-card {
-	text-align: center;
+	text-align: end;
 	text-transform: uppercase;
-	color: $blue-navy;
+	color: $cyan;
 	font-size: map-get($f-sizes, twenty-four_px);
+	padding-right: 6rem;
 	margin-top: 1.5rem;
 }
 .div_d-card {
 	@include flex;
-	align-items: start;
+	align-items: center;
 	margin-bottom: 20px;
 	img {
 		width: 13.75rem;
 		height: 16.5rem;
-		margin: 30px 0 30px 30px;
-		border: inset 2px $grey;
-	}
-	span{
-		display: block;
-		text-align: center;
-		line-height: 1.8;
-		font-size: map-get($f-sizes, eighteen_px);
-		margin-left: 30px;
-		&:nth-child(1){
-			font-size: map-get($f-sizes, twenty_px);
-			text-transform: uppercase;
-			font-weight: 700;
-			color: $cyan;
-		}
+		margin: 30px;
+		border: inset 2px $cyan;
 	}
 }
 .contain_d-card {
@@ -118,20 +93,13 @@
 	justify-content: center;
 	align-items: center;
 	a {
-		font-size: map-get($f-sizes, sixteen_px);
 		width: 75%;
 		background-color: $blue-dark;
 		color: $white;
 		border-radius: 5px 5px 0 0;
-		border-bottom: solid 1px $blue-navy;
+		border-bottom: solid 1px #0094ee;
 		text-decoration: none;
 		padding: 0.4rem;
 		margin: 5px;
-		&:hover{
-			opacity: 0.9;
-		}
-		&:active{
-			background-color: $cyan;
-		}
 	}
 }
