@@ -31,14 +31,17 @@ header nav {
   background-color: transparent;
   height: 100%;
 }
+
 .navbar {
   --bs-navbar-padding-y: 0.7rem;
 }
+
 .container {
   background-color: #171e27;
   z-index: 1;
   background-color: transparent;
 }
+
 .nav-logo {
   width: 64px;
 }
@@ -48,6 +51,7 @@ header nav {
   scale: 1.1;
   transition: 0.1s;
 }
+
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
@@ -56,10 +60,12 @@ header nav {
   outline: none;
   box-shadow: none;
 }
+
 .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
 }
+
 .toggler-icon {
   cursor: pointer;
   width: 30px;
@@ -68,12 +74,14 @@ header nav {
   display: block;
   transition: all 0.3s;
 }
+
 .middle-bar {
   margin: 5px 0;
 }
 .middle-bar:active {
   margin-left: 15px;
 }
+
 .menuNav {
   display: flex;
   justify-content: flex-end;
@@ -99,6 +107,7 @@ header nav {
   transition: all 0.1s;
   color: #0094ee;
 }
+
 /* footer css */
 footer {
   display: block;
@@ -128,6 +137,7 @@ footer section {
   justify-content: space-evenly;
   text-align: center;
 }
+
 .containProfiles {
   display: flex;
   justify-content: center;
@@ -150,6 +160,7 @@ footer section {
   border: none;
   scale: 1.1;
 }
+
 /* grid css */
 .indexBox {
   display: grid;
@@ -164,6 +175,7 @@ footer section {
   background-color: rgba(19, 24, 32, 0.9019607843);
   border-radius: 5px;
 }
+
 .index_title {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -178,6 +190,7 @@ footer section {
   font-size: 2.25rem;
   border-bottom: solid 1px #ffffff;
 }
+
 .subtitle_size h2 {
   text-align: center;
   padding: 10px 0;
@@ -186,6 +199,7 @@ footer section {
   font-weight: 400;
   border-bottom: solid 1px #ffffff;
 }
+
 .index_iframe {
   width: 100%;
   height: 100%;
@@ -204,6 +218,7 @@ footer section {
   width: 100%;
   height: 100%;
 }
+
 .index_subtitle_two {
   width: 80%;
   grid-row-start: 2;
@@ -211,10 +226,12 @@ footer section {
 .index_subtitle_two h2 {
   width: 100%;
 }
+
 .index_subtitle_three {
   grid-column-start: 2;
   grid-row-end: 5;
 }
+
 .index_button {
   grid-column-start: 2;
   grid-row-end: 6;
@@ -235,6 +252,7 @@ footer section {
   background-color: #0094ee;
   color: #ffffff;
 }
+
 .index_image {
   grid-row-start: 3;
 }
@@ -243,12 +261,15 @@ footer section {
 h1 {
   line-height: 1.5;
 }
+
 h2 {
   line-height: 1.5;
 }
+
 h3 {
   line-height: 1.5;
 }
+
 .titleInicio {
   position: relative;
   width: 100%;
@@ -258,6 +279,7 @@ h3 {
   text-transform: uppercase;
   padding-top: 2em;
 }
+
 .subtitleConciertos {
   width: 100%;
   font-weight: 400;
@@ -266,6 +288,7 @@ h3 {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .titleContain {
   font-weight: 700;
   color: #0094ee;
@@ -282,6 +305,7 @@ h3 {
   border: inset 2px #0094ee;
   border-radius: 5px;
 }
+
 .card__image {
   position: absolute;
   top: 18px;
@@ -295,6 +319,7 @@ h3 {
   scale: 1.1;
   transition: 0.2s;
 }
+
 .card__title {
   display: block;
   text-align: center;
@@ -305,6 +330,7 @@ h3 {
   font-size: 1.5rem;
   color: #0094ee;
 }
+
 .card__subtitle {
   display: inline-block;
   padding: 4px 27px;
@@ -313,6 +339,7 @@ h3 {
   font-size: 0.875rem;
   color: rgba(200, 200, 200, 0.8745098039);
 }
+
 .card__description {
   display: block;
   text-align: center;
@@ -324,6 +351,7 @@ h3 {
   font-size: 0.96rem;
   font-weight: 300;
 }
+
 .card__position {
   position: relative;
   background-color: #171e27;
@@ -354,6 +382,7 @@ h3 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
+
 .subtitle_d-card {
   text-align: center;
   text-transform: uppercase;
@@ -361,6 +390,7 @@ h3 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
 }
+
 .div_d-card {
   display: flex;
   align-items: start;
@@ -385,6 +415,7 @@ h3 {
   font-weight: 700;
   color: #0094ee;
 }
+
 .contain_d-card {
   margin-right: 20px;
   width: 100%;
@@ -432,10 +463,12 @@ form {
   padding: 1.5rem;
   border-radius: 5px;
 }
+
 fieldset {
   width: 100%;
   border: none;
 }
+
 legend {
   padding: 5px;
   font-weight: 700;
@@ -443,6 +476,7 @@ legend {
   text-transform: uppercase;
   text-align: center;
 }
+
 .formulario {
   padding: 0;
   display: block;
@@ -479,6 +513,7 @@ legend {
   font-size: 0.79rem;
   text-transform: uppercase;
 }
+
 textarea {
   display: block;
   width: 18.75rem;
@@ -494,6 +529,7 @@ textarea {
   border-radius: 5px;
   padding: 8px;
 }
+
 #msg {
   height: 300px;
   width: 100%;
@@ -567,6 +603,7 @@ main::before {
 .margin-div {
   height: 5rem;
 }
+
 .index_div-img {
   position: relative;
   height: 20rem;
@@ -594,6 +631,7 @@ main::before {
   background-color: #131820;
   padding-bottom: 150px;
 }
+
 .boxMiembros {
   display: flex;
   flex-flow: row wrap;
@@ -608,6 +646,7 @@ main::before {
 .bodyDiscografias {
   background-image: none;
 }
+
 .div_discography {
   display: flex;
   flex-flow: row wrap;
@@ -622,6 +661,7 @@ main::before {
   background-color: #131820;
   padding-bottom: 2em;
 }
+
 .containConciertos {
   margin: 2rem 5%;
   background-color: #171e27;
@@ -633,6 +673,7 @@ main::before {
   margin: 0 32px;
   opacity: inherit;
 }
+
 .divConciertos {
   display: flex;
   flex-wrap: wrap;
@@ -654,6 +695,7 @@ main::before {
 .divConciertos div span:first-child {
   font-weight: 700;
 }
+
 .divLinks {
   width: 350px;
   margin-inline: 7.1px;
@@ -689,6 +731,7 @@ main::before {
   border-color: rgba(200, 200, 200, 0.8745098039);
 }
 
+/* mixin css */ /* fonts size css - map-get */
 /* media queries css */
 @media (max-width: 400px) {
   .card_discography > h2 {
