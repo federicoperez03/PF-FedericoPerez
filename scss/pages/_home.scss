@@ -12,10 +12,28 @@ body {
 }
 /* MAIN */
 main {
+	position: relative;
 	display: block;
+	&::before{
+		content: "";
+		position: absolute;
+		opacity: 0.06;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(../../assets/images/doble-line.png);
+		background-size: auto;
+		background-attachment: fixed;
+		background-position: 35% 64%;
+	}
 }
 /* INDEX.HTML */
+.margin-div{
+	height: 5rem;
+}
 .index_div-img {
+	position: relative;
 	height: 20rem;
 	width: 100%;
 	background-image: linear-gradient(to left, rgba(23, 30, 39, 0.3) 0%, rgba(23, 30, 39, 0.96) 100%), url("https://imageup.me/images/7dc39cea-c8d8-4cd9-9ae4-1ed1dc19e7a1.jpeg");
@@ -58,7 +76,7 @@ main {
 	flex-flow: row wrap;
 	justify-content: center;
 	gap: 20px;
-	margin: 4rem 1rem;
+	margin: 4rem 1rem 0 1rem;
 }
 /* CONCIERTOS.HTML */
 .boxConciertos {
@@ -69,7 +87,6 @@ main {
 .containConciertos {
 	margin: 2rem 5%;
 	background-color: $blue-dark;
-	position: relative;
 	border-radius: 5px;
 	padding: 1rem 0;
 	hr {

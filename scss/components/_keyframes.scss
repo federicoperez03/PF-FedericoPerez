@@ -1,0 +1,18 @@
+/* keyframes css */
+@keyframes rotate_s{
+	0%{
+		transform: rotate(45deg);
+	}
+	20%{
+		transform: rotate(-45deg);
+	}
+	40%{
+		transform: rotate(30deg);
+	}
+	60%{
+		transform: rotate(-30deg);
+	}
+	to{
+		transform: rotate(45deg);
+	}
+}
