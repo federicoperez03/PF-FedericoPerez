@@ -30,6 +30,7 @@ main {
 }
 /* INDEX.HTML */
 .margin-div{
+	position: relative;
 	height: 5rem;
 }
 .index_div-img {
@@ -55,7 +56,8 @@ main {
 }
 /* MIEMBROS.HTML */
 .sectionMiembros {
-	background-color: $blue-grayish-dark;
+	position: relative;
+	background-color: rgba($blue-grayish-dark, 0.02);
 	padding-bottom: 150px;
 }
 .boxMiembros {
@@ -68,8 +70,10 @@ main {
 	gap: 35px 20px;
 }
 /* DISCOGRAFIAS.HTML */
-.bodyDiscografias {
-	background-image: none;
+.mainDiscografias{
+	>section{
+		position: relative;
+	}
 }
 .div_discography {
 	@include flex;
@@ -80,13 +84,14 @@ main {
 }
 /* CONCIERTOS.HTML */
 .boxConciertos {
+	position: relative;
 	width: 100%;
-	background-color: $blue-grayish-dark;
+	background-color: rgba($blue-grayish-dark, 0.02);
 	padding-bottom: 2em;
 }
 .containConciertos {
 	margin: 2rem 5%;
-	background-color: $blue-dark;
+	background-color: $blue-grayish-dark_05;
 	border-radius: 5px;
 	padding: 1rem 0;
 	hr {
@@ -146,6 +151,8 @@ main {
 }
 /* CONTACTO.HTML */
 .boxContacto {
+	position: relative;
+
 	hr {
 		margin-inline: 40px;
 		border-color: $grey;

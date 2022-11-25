@@ -103,7 +103,7 @@ header nav {
   color: #ffffff;
 }
 .menuNav li a:hover {
-  background-color: rgba(19, 24, 32, 0.9019607843);
+  background-color: rgba(19, 24, 32, 0.902);
   border-bottom: solid 3px rgb(0, 148, 238);
   transition: all 0.1s;
   color: #0094ee;
@@ -169,13 +169,14 @@ footer section {
   display: grid;
   justify-items: center;
   align-items: center;
+  position: relative;
   margin: 5rem auto 0 auto;
   max-width: 1200px;
   height: 950px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1.5fr 3fr 1fr 1fr;
   grid-gap: 10px;
-  background-color: rgba(19, 24, 32, 0.9019607843);
+  background-color: rgba(19, 24, 32, 0.5019607843);
   border-radius: 5px;
 }
 
@@ -466,7 +467,7 @@ h3 {
 /* contact css */
 form {
   margin: 0 5%;
-  background-color: #131820;
+  background-color: rgba(19, 24, 32, 0.5019607843);
   padding: 1.5rem;
   border-radius: 5px;
 }
@@ -600,14 +601,15 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: url(https://iili.io/H2aBnl2.png);
   background-size: auto;
   background-attachment: fixed;
-  background-image: url(https://iili.io/H2aBnl2.png);
   background-position: 35% 64%;
 }
 
 /* INDEX.HTML */
 .margin-div {
+  position: relative;
   height: 5rem;
 }
 
@@ -635,7 +637,8 @@ main::before {
 
 /* MIEMBROS.HTML */
 .sectionMiembros {
-  background-color: #131820;
+  position: relative;
+  background-color: rgba(19, 24, 32, 0.02);
   padding-bottom: 150px;
 }
 
@@ -650,8 +653,8 @@ main::before {
 }
 
 /* DISCOGRAFIAS.HTML */
-.bodyDiscografias {
-  background-image: none;
+.mainDiscografias > section {
+  position: relative;
 }
 
 .div_discography {
@@ -664,14 +667,15 @@ main::before {
 
 /* CONCIERTOS.HTML */
 .boxConciertos {
+  position: relative;
   width: 100%;
-  background-color: #131820;
+  background-color: rgba(19, 24, 32, 0.02);
   padding-bottom: 2em;
 }
 
 .containConciertos {
   margin: 2rem 5%;
-  background-color: #171e27;
+  background-color: rgba(19, 24, 32, 0.5019607843);
   border-radius: 5px;
   padding: 1rem 0;
 }
@@ -733,6 +737,9 @@ main::before {
 }
 
 /* CONTACTO.HTML */
+.boxContacto {
+  position: relative;
+}
 .boxContacto hr {
   margin-inline: 40px;
   border-color: rgba(200, 200, 200, 0.8745098039);

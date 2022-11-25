@@ -5,13 +5,14 @@
 	display: grid;
 	justify-items: center;
 	align-items: center;
+	position: relative;
 	margin: 5rem auto 0 auto;
 	max-width: 1200px;
 	height: 950px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr 1.5fr 3fr 1fr 1fr;
 	grid-gap: 10px;
-	background-color: $blue-grayish-dark_09;
+	background-color: $blue-grayish-dark_05;
 	border-radius: 5px;
 }
 .index_title {
